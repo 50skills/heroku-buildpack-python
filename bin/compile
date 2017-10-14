@@ -115,7 +115,7 @@ make -j4
 make clean
 make
 make install
-cd .heroku/python/lib/python3.6/site-packages/
+cd /app/.heroku/python/lib/python3.6/site-packages/
 cp cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
 cd
 # We'll need to send these statics to other scripts we `source`.
