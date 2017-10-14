@@ -115,9 +115,8 @@ make -j4
 make clean
 make
 make install
-ldconfig
 cd .heroku/python/lib/python3.6/site-packages/
-mv cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
+cp cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
 cd
 # We'll need to send these statics to other scripts we `source`.
 export BUILD_DIR CACHE_DIR BIN_DIR PROFILE_PATH EXPORT_PATH
